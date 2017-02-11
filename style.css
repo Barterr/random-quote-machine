@@ -27,29 +27,20 @@ html, body {
 }
 
 #get-quote {
-  position: relative;
-  border-radius: 12px;
-  border: solid 7px;
-  color: black;
-  background-color: white;
-  padding: 5px 10px 5px 10px;
-  margin: auto;
-  width: 150px;
-  font-family: 'Bree Serif', serif;
-  font-size: 20px;
+  color:black;
+}
+
+#tweet-quote {
+  color:black;
 }
 
 .quote-flex {
   display: flex;
   flex-direction: row;
+  font-size: 35px;
 }
 
-button {
-  justify-content: center;
-  outline: none;
-}
-
-button:focus {
+a:focus {
   outline:none;
 }
 
