@@ -3,8 +3,9 @@ var newQuote = function() {
     url: '//quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
     success: function(data) {
       var post = data.shift(); // The data is an array of posts. Grab the first one.
-      $('#quote').html(post.content);
-      $('#author').html(post.title);
+      var content = post.content.slice(3,post.content.length - 5);
+      $('#quote').html(content);
+      $('#author').html("- "+post.title);
 
       var red = Math.floor(Math.random() * 255);
       var green = Math.floor(Math.random() * 255);
