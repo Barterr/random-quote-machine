@@ -21,7 +21,6 @@ var newQuote = function() {
       $("#tweet-quote").animate({
         color: 'rgb('+red+','+green+','+blue+')',
       }, 1000);
-
     },
     cache: false
   });
