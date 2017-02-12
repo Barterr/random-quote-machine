@@ -3,15 +3,17 @@
 
 var newQuote = function () {
   "use strict";
+  var categories = ["famous", "movies"];
+
   $.ajax({
     url: 'https://andruxnet-random-famous-quotes.p.mashape.com/',
     type: 'POST',
     data: {
-      "cat": "famous"
+      "cat": categories[Math.round(Math.random())]
     },
     dataType: 'json',
     success: function(data) {
-
+      console.log(JSON.stringify(data));
       var quote = data.quote;
       var author = data.author;
 
