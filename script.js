@@ -13,7 +13,7 @@ var newQuote = function () {
     },
     dataType: 'json',
     success: function(data) {
-      console.log(JSON.stringify(data));
+      // console.log(JSON.stringify(data));
       var quote = data.quote;
       var author = data.author;
 
